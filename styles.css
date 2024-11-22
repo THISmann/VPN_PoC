@@ -1,0 +1,736 @@
+/* Bannière */
+.banner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.nav-item {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link--primary {
+    color: #007bff;
+}
+
+.nav-link--phone {
+    color: black;
+}
+
+.nav-link__icon {
+    width: 15px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* category-date-container */
+.category-date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+
+.category-badg {
+    display: inline-block;
+    background-color: #F7F8FD;
+    color: #5D71DD;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    width: 131px;
+    height: 37px;
+    border-radius: 8px;
+}
+
+.card__category {
+    display: inline-block;
+    background-color: #F7F8FD;
+    color: #5D71DD;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    width: 131px;
+    height: 37px;
+    border-radius: 8px;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+/* Card container */
+.card {
+    border: none;
+    /* Remove the default border */
+    background-color: transparent;
+    /* Transparent background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__body {
+    border: none;
+    /* Remove the default border */
+    background-color: transparent;
+    /* Transparent background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.card .card-content {
+    background-color: white;
+}
+
+.card.text-white {
+    position: relative;
+
+}
+
+.card.text-white .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.card-img-overlay .badge {
+    background-color: #343a40;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-img-overlay .card-title {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.card-white {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.card-white .category-badge {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card-white .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.card-white .date {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Badge for category */
+.category-badge {
+    display: inline-block;
+    background-color: #f0f4ff;
+    /* Light blue background */
+    color: #007bff;
+    /* Blue text */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    /* Semi-bold */
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 15px;
+    /* Space below title */
+}
+
+.card__title {
+    font-size: 22px;
+    font-weight: 600;
+    /* Semi-bold */
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 15px;
+    /* Space below title */
+}
+
+
+/* Text styling */
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2F222266;
+    line-height: 1.8;
+    /* Add spacing between lines */
+    margin-bottom: 15px;
+    /* Space below the text */
+}
+
+.card__text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2F222266;
+    line-height: 1.8;
+    /* Add spacing between lines */
+    margin-bottom: 15px;
+    /* Space below the text */
+}
+
+/* Date styling */
+.date {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+    /* Light gray text */
+    font-weight: 400;
+    text-align: right;
+    /* Align to the right */
+}
+
+
+/* White Card */
+.card-white {
+    background-color: #fff;
+    color: #333;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.card__meta {
+    background-color: white;
+}
+
+.card-white .category-badge {
+    display: inline-block;
+    background-color: #f0f4ff;
+    /* Light blue */
+    color: #007bff;
+    /* Blue text */
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card-white .card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-white .card-text {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card-white .date {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Blue Card */
+.card-blue {
+    background-color: #5D71DD;
+    /* Blue */
+}
+
+.card-blue .category-badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent white */
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 111px;
+    color: #FFFFFF;
+
+}
+
+.card-blue .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 75px;
+    margin-top: 20px;
+}
+
+.card-blue .date {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    /* Light white */
+    text-align: left;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.col-lg-4 {
+    margin: 0 auto;
+    /* Center the card horizontally */
+    max-width: 400px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Matches the rounded corners from the mockup */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    /* Ensures the image matches the card's rounded corners */
+}
+
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    /* Adds a subtle gradient effect */
+    color: white;
+    border-radius: 20px;
+    /* Ensures overlay matches the card's rounded corners */
+}
+
+.card-img-overlay .badge {
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Matches the dark background for category */
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-img-overlay .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.card-img-overlay .date {
+    font-size: 12px;
+    color: #d1d1d1;
+    text-align: left;
+    margin-top: 70px;
+}
+
+
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.popular-news .news-item {
+    margin-bottom: 15px;
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #888;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e9ecef;
+    margin: 15px 0;
+}
+
+.subscription-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscription-form .email-input {
+    padding: 13px 32px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #2F222266;
+    background-color: #F5F5F5;
+}
+
+.email-input:focus {
+    border-color: #6c757d;
+}
+
+.subscription-form .subscribe-button {
+    background-color: #5D71DD;
+    color: #FFFFFF;
+    padding: 13px 68px 13px 68px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-family: Futura PT;
+    font-weight: 400;
+    line-height: 23.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.subscribe-button:hover {
+    background-color: #4558d0;
+}
+
+
+/* Pagination styles */
+.pagination-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.page-item {
+    font-size: 16px;
+}
+
+.page-item .pages-link {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    text-align: left;
+    text-decoration: none;
+    /* Désactive le soulignement */
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin: 5px;
+}
+
+
+.page-item.active {
+    font-family: Futura PT;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.dots {
+    color: #888;
+    padding: 5px 10px;
+}
+
+.next-link {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #5D71DD0D;
+    width: Hug (137px)px;
+    height: Hug (43px)px;
+    padding: 10px 16px 10px 16px;
+    gap: 10px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+
+
+
+}
+
+/* Footer styles */
+.footer {
+    background-color: #5D71DD0D;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #586BFF;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 1023px) {
+    .col-lg-3 {
+        display: none;
+        /* Hide the section when the screen width is <= 1024px */
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-lg-3 {
+        display: block;
+        /* Show the section when the screen width is > 1024px */
+    }
+}
+
+@media (min-width: 1024px) {
+    .col-md-12 {
+        display: none;
+        /* Hide the section for screens wider than 1023px */
+    }
+}
+
+@media (max-width: 1023px) {
+    .col-md-12 {
+        display: block;
+        /* Ensure the section is visible for screens 1023px and smaller */
+    }
+}
+
+@media (max-width: 1023px) {
+    .article {
+        flex: 0 0 100%;
+        /* Ensures the column spans the full width */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+    } 
+
+    .nav-item {
+        margin: auto;
+    }
+
+    .banner img {
+        height: 120px;
+    }
+
+    .banner {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 575px) { 
+    .container {
+        width: 100%;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-list {
+        padding-left: 0px;
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        margin: auto;
+    }
+
+    .banner img {
+        height: 100px;
+    }
+
+    .banner {
+        overflow: hidden;
+    }
+
+    .card-mb {
+        display: none;
+    }
+
+    .subscribe-button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe-button img {
+        margin-left: 10px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    .page-item {
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+}
