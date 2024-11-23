@@ -38,12 +38,13 @@
 
 .nav-link {
     text-decoration: none;
-    color: white;
+    color: white; 
    
 }
 
 .nav-link--primary {
     font-weight: bold;
+   
 }
 
 .nav-link--phone {
