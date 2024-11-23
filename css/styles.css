@@ -4,65 +4,103 @@
     height: 400px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+/* Header Styling */
 .header {
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
 }
 
 .container {
-    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 
-
-
-.nav {
+.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-list {
-    display: flex;
-}
 
-.nav-list li {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-
-.nav-item {
-    margin-right: 20px;
-    text-decoration: none;
-}
 
 .nav-link {
-    font-size: 16px;
-    margin: 0 10px;
     text-decoration: none;
-    color: inherit;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
+    color: white;
+   
 }
 
 .nav-link--primary {
-    color: #007bff;
+    font-weight: bold;
 }
 
 .nav-link--phone {
-    color: black;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link__icon {
-    width: 15px;
-    height: 16px;
-    margin-right: 5px;
+.nav-link--phone img {
+    width: 20px;
+    margin-right: 8px;
 }
 
+/* Burger Menu Icon */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-line {
+    height: 4px;
+    background-color: rgba(7, 72, 171, 0.929);
+    border-radius: 2px;
+    transition: .4s;
+}
+
+.burger-menu:hover {
+    transform: scale(1.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav ul li {
+    margin: 0 12px;
+    list-style: none;
+}
+
+.nav ul li a {
+    color: #007bff;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
 
 /* General styling */
 body {
@@ -425,8 +463,6 @@ body {
     margin-top: 70px;
 }
 
-
-
 .section-title {
     font-size: 20px;
     font-weight: bold;
@@ -493,7 +529,6 @@ hr {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-
     font-family: Futura PT;
     font-weight: 400;
     line-height: 23.08px;
@@ -566,9 +601,6 @@ hr {
     gap: 10px;
     border-radius: 8px 0px 0px 0px;
     opacity: 0px;
-
-
-
 }
 
 /* Footer styles */
@@ -619,38 +651,96 @@ hr {
 }
 
 
+/* ......nav responsivive........ */
+
+
+@media (max-width: 996px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #1f5c99c7;
+        z-index: 111;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+
+    }
+
+    .nav ul li a {
+        color: #ffffff;
+
+    }
+
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    /* display burger menu */
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+        /* display menu when actived */
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @media (max-width: 1023px) {
     .col-lg-3 {
         display: none;
-        /* Hide the section when the screen width is <= 1024px */
+        
     }
 }
 
 @media (min-width: 1024px) {
     .col-lg-3 {
         display: block;
-        /* Show the section when the screen width is > 1024px */
+        
     }
 }
 
 @media (min-width: 1024px) {
     .col-md-12 {
         display: none;
-        /* Hide the section for screens wider than 1023px */
+        
     }
 }
 
 @media (max-width: 1023px) {
     .col-md-12 {
         display: block;
-        /* Ensure the section is visible for screens 1023px and smaller */
+        
     }
 }
 
 @media (max-width: 1023px) {
     .article {
         flex: 0 0 100%;
-        /* Ensures the column spans the full width */
         max-width: 100%;
     }
 }
@@ -662,7 +752,7 @@ hr {
 
     .nav-list {
         flex-wrap: wrap;
-    } 
+    }
 
     .nav-item {
         margin: auto;
@@ -678,13 +768,13 @@ hr {
 
 }
 
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
     .container {
         width: 100%;
     }
-    
+
     .logo {
-        display: none;
+        height: 50px;
     }
 
     .nav {
@@ -734,3 +824,5 @@ hr {
         flex-wrap: wrap;
     }
 }
+
+

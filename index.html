@@ -8,42 +8,54 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./img/logo.png">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="logo"><img src="assets/logo.png" alt="logo" /></div>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link nav-link--primary" href="#">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">О нас</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Поиск</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link--phone" href="tel:+79878878787">
-                  <img src="assets/phone.png" alt="phone" /> +7 (987) 887-87
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    
+<header class="header">
+  <div class="container">
+    <div class="content">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
       </div>
-    </header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link nav-link--primary" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Поиск</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link--phone" href="tel:+79878878787">
+              <img src="img/phone.png" alt="phone" /> +7 (987) 887-87
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Burger Icon -->
+      <div class="burger-menu" id="burger-menu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  
 
     <!-- Banner -->
     <section class="banner container-fluid p-0">
       <img
-        src="assets/banner-image.png"
+        src="img/banner-image.png"
         class="img-fluid w-100"
         alt="Stormtrooper Banner"
       />
@@ -118,7 +130,7 @@
               <div class="col-lg-4 col-sm-12 card-mb">
                 <div class="card">
                   <img
-                    src="assets/background-image.png"
+                    src="img/background-image.png"
                     alt="Background"
                     class="card-img"
                   />
@@ -202,7 +214,7 @@
               <div class="col-lg-4">
                 <div class="card">
                   <img
-                    src="assets/background-image.png"
+                    src="img/background-image.png"
                     alt="Background"
                     class="card-img"
                   />
@@ -305,7 +317,7 @@
                   required
                 />
                 <button type="submit" class="subscribe-button">
-                  Подписаться <img src="assets/send.png" />
+                  Подписаться <img src="img/send.png" />
                 </button>
               </form>
             </div>
@@ -359,7 +371,7 @@
                   required
                 />
                 <button type="submit" class="subscribe-button">
-                  Подписаться <img src="assets/send.png" />
+                  Подписаться <img src="img/send.png" />
                 </button>
               </form>
             </div>
@@ -371,7 +383,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
-          <img src="assets/logo.png" />
+          <img src="img/logo.png" />
         </div>
         <div class="footer-links">
           <a href="#" class="footer-link">О нас</a>
@@ -385,5 +397,17 @@
         </div>
       </div>
     </footer>
+<script>
+  // Sélectionner l'élément du menu burger et de la liste de navigation
+  const burgerMenu = document.getElementById('burger-menu');
+  const navList = document.querySelector('.nav-list');
+
+  // Ajouter un écouteur d'événements pour ouvrir/fermer le menu
+  burgerMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+
+
   </body>
 </html>
